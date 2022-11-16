@@ -1,0 +1,67 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        //FirstEx
+        System.out.println("****FirstEx****");
+        int[] grades = {50, 60, 40, 10, 38, 65, 87, 56, 90, 100, 66, 80, 88, 40, 98};
+        for (int g : grades) {
+            if (g >= 90 && g <= 100) {
+                System.out.println(g + " -A");
+            } else if (g >= 80 && g < 90) {
+                System.out.println(g + " -B");
+            } else if (g >= 70 && g < 80) {
+                System.out.println(g + " -C");
+            } else if (g >= 60 && g < 70) {
+                System.out.println(g + " -D");
+            } else if (g >= 50 && g <= 0) {
+                System.out.println(g + " -F");
+            }
+        }
+
+        //SecondEx
+        System.out.println("****SecondEx****");
+        String[] name = {"Shaza", "Mohamed", "Asmaa", "Anfal", "Yousra", "Amin", "Radwa", "Yasmeen"};
+        for (String n : name) {
+            if (n.startsWith("A")) {
+                System.out.println(n);
+            }
+        }
+        //ThirdEx
+        System.out.println("****ThirdEx****");
+        ArrayList<Integer> num = new ArrayList<Integer>();
+        num.add(50);
+        num.add(60);
+        num.add(40);
+        num.add(10);
+        num.add(38);
+        num.add(65);
+        num.add(87);
+        num.add(56);
+        num.add(90);
+        num.add(100);
+        num.add(66);
+        num.add(80);
+        num.add(88);
+        num.add(40);
+        num.add(98);
+        for (int n : num) {
+            if (n >= 50) {
+                System.out.println(n);
+            }
+        }
+        //BonusEx
+        System.out.println("****BonusEx****");
+        int[] ch = {50, 60, 40, 10, 38, 65, 87, 56, 90, 100, 66, 80, 88, 40, 98};
+        System.out.print("Enter number : ");
+        int check = s.nextInt();
+        for (int c : ch) {
+
+            if (c == check) {
+                System.out.println("Existing");
+            }
+        }
+    }
+}
