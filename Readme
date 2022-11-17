@@ -16,7 +16,7 @@ public class Main {
                 System.out.println(g + " -C");
             } else if (g >= 60 && g < 70) {
                 System.out.println(g + " -D");
-            } else if (g >= 50 && g <= 0) {
+            } else {
                 System.out.println(g + " -F");
             }
         }
